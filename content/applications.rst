@@ -22,3 +22,7 @@ Discover our user guides and configuration tutorials per application.
     applications/services
     applications/productivity
     applications/general
+    applications/CRM
+     applications/HRM
+    
+     
