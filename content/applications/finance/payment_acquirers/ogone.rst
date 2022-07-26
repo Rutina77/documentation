@@ -43,16 +43,16 @@ Set up Ogone for Odoo
 ---------------------
 
 Ogone must now be configured to accept payments from Odoo. Head to :menuselection:`Configuration -->
-Technical Information --> Global Security Parameters`, select :guilabel:`SHA-1` as
+Technical Information --> Global Security Parameters`, select :guilabel:`SHA-512` as
 :guilabel:`Hash Algorithm` and :guilabel:`UTF-8` as :guilabel:`character encoding`. Then, go to the
 :guilabel:`Data and Origin verification` tab of the same page and leave the URL field of the
 :guilabel:`e-Commerce and Alias Gateway` section blank.
 
 .. tip::
-   If you need to use another algorithm, such as `sha-256` or `sha-512`, within Odoo, activate the
+   If you need to use another algorithm, such as `sha-1` or `sha-256`, within Odoo, activate the
    :ref:`developer mode <developer-mode>` and go to :menuselection:`General Settings -->
    Technical --> System Parameters`. From here, search for `payment_ogone.hash.function` and change
-   the value line to the desired algorithm (`sha-256` or `sha-512`).
+   the value line to the desired algorithm (`sha-1` or `sha-256`).
 
 You are now required to generate **SHA-IN** passphrases. **SHA-IN** and **SHA-OUT** passphrases are
 used to digitally sign the transaction requests and responses between Odoo and Ogone. By using these
